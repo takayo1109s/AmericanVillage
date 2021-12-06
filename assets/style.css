@@ -42,15 +42,10 @@ h2{
 }
 
 @media screen and (max-width: 767px){
-  header{
-    
-  }
+  
 
-  .avav{
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-
+  .header-right{
+    text-align: center;
   }
   
 
@@ -59,8 +54,6 @@ h2{
   }
 
   .main1{
-    display: none;
-    background-image: url('../folder/visual_1_sp.png');
-    
+    display: block;
   }
 }
