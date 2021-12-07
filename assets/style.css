@@ -57,3 +57,52 @@ h2{
     display: block;
   }
 }
+
+/* latest articleの部分 */
+
+/* latest article の装飾 */
+h1{
+  font-size: 30px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* articlesの装飾 */
+
+.articles{
+  width: 1000px;
+  height: 900px;
+  /* border: solid 1px black;  */
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;  
+}
+.articlebox{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  width: 300px;
+  height: 350px;
+  /* border: solid 1px black; */
+}
+.pic{
+  width: 300px;
+}
+.more{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+}
+.more p{
+  position: relative;
+  top: 70px;
+  left: 185px;
+}
+p{
+  line-height: 25px;
+}
