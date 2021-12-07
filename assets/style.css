@@ -14,24 +14,88 @@ li{
   margin-left: 15px;
 }
 
-.main1 {
-  text-align: center;
-  position: relative;
-  z-index: 20;
+@media screen and (max-width: 767px){
+
+  header {
+    height: 160px;
+  }
+  
+  li{
+    display: none;
+  }
+
 }
 
-.avav{
+/* アメビレ文字（黒） */
+.header-av{
   position: absolute;
-  top: 30px;
-  left: 120px;
+  top: 3%;
+  left: 10%;
   z-index: 40;
 }
 
-.word{
+@media screen and (max-width:767px) {
+  .header-av {
+      width: 120px;
+      height: 120px;
+      left: 43%;
+
+  }
+}
+
+
+/* アメビレの写真トップ */
+.img-sp1 {
+  display: none;
+}
+
+.img-pc1{
+  position: relative;
+  z-index: 20;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:767px) {
+  .img-pc1 {
+      display: none;
+  }
+
+  .img-sp1 {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 20;
+  }
+}
+
+
+/* アメビレの文字（白） */
+.text-sp {
+  display: none;
+}
+
+.text-pc{
   position: absolute;
-  left: 400px;
-  bottom: 47px;
+  left: 55%;
+  bottom: 19%;
   z-index: 30;
+}
+
+@media screen and (max-width:767px) {
+  .text-pc {
+      display: none;
+  }
+
+  .text-sp {
+      position: absolute;
+      z-index: 30;
+      top: 25%;
+      left: 5%;
+      display: block;
+  }
 }
 
 h2{
@@ -41,68 +105,42 @@ h2{
   margin-left: 150px;
 }
 
-@media screen and (max-width: 767px){
-  
+.br-sp{
+  display: none;
+}
 
-  .header-right{
+@media screen and (max-width:767px) {
+  h2{
+    margin-left: auto;
     text-align: center;
-  }
-  
-
-  li{
-    display: none;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 3rem;
   }
 
-  .main1{
+  .br-sp{
     display: block;
   }
 }
 
-/* latest articleの部分 */
 
-/* latest article の装飾 */
-h1{
-  font-size: 30px;
-}
-.content{
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+/* フッター */
+footer{
+  width: 100%;
+  height: 2.5cm;
+  background-color: black;
 }
 
-/* articlesの装飾 */
+.footer-word{
+  color: white;
+  text-align: center;
+  padding-top: 1cm;
+}
 
-.articles{
-  width: 1000px;
-  height: 900px;
-  /* border: solid 1px black;  */
-  display: flex;
-  justify-content: space-between; 
-  flex-wrap: wrap;  
-}
-.articlebox{
-  display: flex;
-  justify-content: center;
-}
-.box{
-  width: 300px;
-  height: 350px;
-  /* border: solid 1px black; */
-}
-.pic{
-  width: 300px;
-}
-.more{
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-}
-.more p{
-  position: relative;
-  top: 70px;
-  left: 185px;
-}
-p{
-  line-height: 25px;
-}
+@media screen and (max-width:767px){
+  .footer-word{
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+} 
