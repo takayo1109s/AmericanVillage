@@ -170,6 +170,27 @@ p{
   line-height: 25px;
 }
 
+@media screen and (max-width:767px){
+  .footer-word{
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+} 
+
+/* latest article部分のメディアクエリ */
+@media screen and (max-width: 767px) {
+  .content{
+      font-size: 30px;
+  }
+  .articles{
+      display: block;
+      /* justify-content: center; */  
+  }
+
+  
+}
+
+
 
 
 
@@ -186,21 +207,3 @@ footer{
   padding-top: 1cm;
 }
 
-@media screen and (max-width:767px){
-  .footer-word{
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
-} 
-
-/* latest article部分のメディアクエリ */
-@media screen and (max-width: 767px) {
-  .content{
-      font-size: 30px;
-  }
-  .articles{
-      justify-content: center;
-  }
-
-  
-}
