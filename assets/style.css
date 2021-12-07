@@ -192,3 +192,15 @@ footer{
     font-size: 20px;
   }
 } 
+
+/* latest article部分のメディアクエリ */
+@media screen and (max-width: 767px) {
+  .content{
+      font-size: 30px;
+  }
+  .articles{
+      justify-content: center;
+  }
+
+  
+}
