@@ -1,147 +1,67 @@
+
 header{
-  display: flex;
-  justify-content: space-between;
-  height: 140px;
+  height: 100vh;
+  width: 1152px;
+  margin: 0 auto;
+  
+}
+#header {
+  text-align: center;
+
+}
+
+.menulist{
+  top: 10%;
+  right: 50px;
+
 }
 
 ul{
   display: flex;
-  margin-right: 150px;
-  margin-top: 80px;
+  justify-content: end;
+  /* margin-top: 30px;  */
 }
 
 li{
-  margin-left: 15px;
-}
-
-@media screen and (max-width: 767px){
-
-  header {
-    height: 160px;
-  }
-  
-  li{
-    display: none;
-  }
-
-}
-
-/* アメビレ文字（黒） */
-.header-av{
-  position: absolute;
-  top: 3%;
-  left: 10%;
-  z-index: 40;
-}
-
-@media screen and (max-width:767px) {
-  .header-av {
-      width: 120px;
-      height: 120px;
-      left: 43%;
-
-  }
+  padding-left: 10px;
 }
 
 
-/* アメビレの写真トップ */
-.img-sp1 {
-  display: none;
+
+.main {
+  position: relative;
+  margin-top: 140px;
 }
 
 .img-pc1{
-  position: relative;
-  z-index: 20;
+  text-align: center;
   display: block;
   margin: 0 auto;
 }
 
-@media screen and (max-width:767px) {
-  .img-pc1 {
-      display: none;
-  }
-
-  .img-sp1 {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 20;
-  }
-}
-
-
-/* アメビレの文字（白） */
-.text-sp {
-  display: none;
+.header-av{
+  position: absolute;
+  top: -25%;
+  right: 80%;
 }
 
 .text-pc{
   position: absolute;
-  left: 55.5%;
-  bottom: 19%;
-  z-index: 30;
+  right: 0.5%;
+  top: 53%;
 }
 
-@media screen and (max-width:767px) {
-  .text-pc {
-      display: none;
-  }
+p{
+  font-size: 20px;
+  padding-left: 100px;
 
-  .text-sp {
-      position: absolute;
-      z-index: 30;
-      top: 25%;
-      left: 5%;
-      display: block;
-  }
-}
-
-h2{
-  font-weight: normal;
-  font-size: 24px;
-  margin-top: 10px;
-  margin-left: 150px;
-}
-
-.br-sp{
-  display: none;
-}
-
-@media screen and (max-width:767px) {
-  h2{
-    margin-left: auto;
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
-    line-height: 3rem;
-  }
-
-  .br-sp{
-    display: block;
-  }
 }
 
 
-
-/* フッター */
 footer{
-  width: 100%;
-  height: 2.5cm;
+  line-height: 100px;
   background-color: black;
-}
-
-.footer-word{
-  color: white;
   text-align: center;
-  padding-top: 1cm;
-}
-
-@media screen and (max-width:767px){
-  .footer-word{
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
-  
+  color: white;
+  width: 100%;
 }
